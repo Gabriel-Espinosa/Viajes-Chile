@@ -20,8 +20,9 @@
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-            <img src="./assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            <a class="navbar-brand text-white" href="#">Viajes Chile</a>
+         <!--<img src="./assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
+            <a class="navbar-brand text-white" id="enlace-logo" href="#"><img src="./assets/img/viajes.svg" alt=""
+                width="30" height="24" class="d-inline-block align-text-top">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                   <a class="nav-link text-white" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#quienes-somos">Quienes Somos</a>
+                  <a class="nav-link text-white d-none d-md-flex" href="#quienes-somos">Quienes Somos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="#destacados">Destacados</a>
@@ -48,79 +49,86 @@
     </div>
   </div>
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/img/carousel1.jpg" class="d-block w-100" style="height: 100vh" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/carousel2.jpg" class="d-block w-100" style="height: 100vh" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/carousel3.jpg" class="d-block w-100" style="height: 100vh" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/carousel1.jpg" class="d-block w-100" id="foto-1" style="height: 100vh" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/carousel2.jpg" class="d-block w-100" id="foto-2" style="height: 100vh" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/carousel3.jpg" class="d-block w-100" id="foto-3" style="height: 100vh" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <div class="container">
-    <div class="row" id="quienes-somos">
+    <div class="row d-none d-md-flex" id="quienes-somos">
       <h2 class="text-white text-center my-5">¿QUIENES SOMOS?</h2>
       <div class="col-lg-4">
         <div class="bg-info text-center">
-        <i class="fa-solid fa-plane text-white fa-2x py-1">
-        </i>
+          <i class="fa-solid fa-plane text-white fa-2x py-1">
+          </i>
         </div>
-        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque esse fugiat voluptatum enim cumque quaerat
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque esse fugiat voluptatum
+          enim cumque quaerat
           accusantium, explicabo rem mollitia, non eveniet. Suscipit iure magni voluptate qui, doloribus aspernatur!
           Nulla, harum.</p>
 
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat dolor maiores, tempore, dolore
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat dolor maiores,
+          tempore, dolore
           architecto impedit autem, ipsum consequatur voluptatibus eaque et deleniti enim porro temporibus. Distinctio,
           sit totam! Quam!</p>
 
-        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi ab unde id nisi deleniti
+        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi ab unde id
+          nisi deleniti
           perspiciatis ea, eos ipsa animi voluptatum placeat illo impedit! Soluta nisi quasi similique fugit qui.</p>
       </div>
 
-      <div class="col-lg-4">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium sit voluptatibus porro cumque
+      <div class="col-lg-4" id="texto-2">
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium sit voluptatibus
+          porro cumque
           inventore modi eius ab et dolor dolorum laborum quisquam illo, ut, eaque nobis ducimus possimus eos.</p>
 
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus laboriosam dolor nulla
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus laboriosam
+          dolor nulla
           expedita! Nemo amet vitae, in assumenda deleniti facere non expedita vero facilis quos? Impedit incidunt ipsa
           expedita.</p>
 
-        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis est hic illo, ut exercitationem alias dicta
+        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis est hic illo, ut
+          exercitationem alias dicta
           voluptatem tenetur et dolores quos veniam, animi repudiandae vitae. Modi, sequi. Ullam, alias earum.</p>
-        
-          <div class="bg-info text-center">
+
+        <div class="bg-info text-center">
           <i class="fa-solid fa-triangle-exclamation text-white fa-2x py-1"></i>
-          </div>
+        </div>
       </div>
 
       <div class="col-lg-4">
         <div class="bg-info text-center">
-        <i class="fa-solid fa-route text-white fa-2x py-1"></i>
-      </div>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia incidunt sapiente eligendi dolorem ea est
+          <i class="fa-solid fa-route text-white fa-2x py-1"></i>
+        </div>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia incidunt sapiente
+          eligendi dolorem ea est
           accusantium dolor accusamus, laborum facere voluptatibus nam ipsam ipsum suscipit assumenda consequuntur.
           Quae, soluta.</p>
 
-        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti at iusto fugit repellat natus in
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti at iusto fugit repellat
+          natus in
           cupiditate modi eos praesentium iure, non expedita laboriosam quibusdam voluptas rem id eligendi sint vitae.
         </p>
 
-        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime deserunt consectetur aliquid odio
+        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime deserunt
+          consectetur aliquid odio
           dicta aut laudantium, ea eos qui temporibus consequatur rerum sint quibusdam dolore quis reiciendis? Ut,
           fugiat.</p>
       </div>
@@ -132,41 +140,45 @@
       <h2 class="text-white text-center my-5">DESTACADOS</h2>
 
       <div class="col-md-6 col-lg-3">
-        <div class="card" style="max-width: 18rem;">
+        <div class="card mx-auto" id="carta-1" style="max-width: 18rem;">
           <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
-        <div class="card" style="max-width: 18rem;">
+        <div class="card mx-auto" id="carta-2" style="max-width: 18rem;">
           <img src="./assets/img/card2.jpg" class="card-img-top tarjeta-2" alt="..." style="max-height: 12rem;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
-        <div class="card" style="max-width: 18rem;">
+        <div class="card mx-auto" id="carta-3" style="max-width: 18rem;">
           <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
-        <div class="card" style="max-width: 18rem;">
+        <div class="card mx-auto" style="max-width: 18rem;">
           <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
       </div>
@@ -191,22 +203,27 @@
             <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
           </div>
-          <button type="submit" class="btn btn-info text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona aquí para enviar tu mensaje">Enviar</button>
+          <button type="submit" class="btn btn-info text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Presiona aquí para enviar tu mensaje">Enviar</button>
         </form>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid bg-info">
-    <div class="row">
-      <div class="col-6">
-        <p class="text-white text-center my-5" style="font-size: 2rem;">VIAJES CHILE</p>
+  <div class="container-fluid bg-info text-center">
+    <div class="row footer align-items-center">
+      <div class="col-12 col-md-6">
+        <p class="text-white text-center my-2 my-md-5" style="font-size: 2rem;">VIAJES CHILE</p>
       </div>
-      <div class="col-6 text-center">
-        <i class="fa-brands fa-github text-white fa-2x my-5" data-bs-toggle="tooltip" data-bs-placement="left" title="Visita nuestro perfil de GitHub"></i>
-        <i class="fa-brands fa-linkedin text-white fa-2x my-5 ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visita nuestro perfil de LinkedIn"></i>
-        <i class="fa-brands fa-twitter-square text-white fa-2x my-5 ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visita nuestro perfil de Twitter"></i>
-        <i class="fa-brands fa-facebook-square text-white fa-2x my-5 ms-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Visita nuestro perfil de Facebook"></i>
+      <div class="col-12 col-md-6 text-center my-2">
+        <i class="fa-brands fa-github text-white fa-2x my-2 my-md-5" data-bs-toggle="tooltip" data-bs-placement="left"
+          title="Visita nuestro perfil de GitHub"></i>
+        <i class="fa-brands fa-linkedin text-white fa-2x my-2 my-md-5 ms-3" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" title="Visita nuestro perfil de LinkedIn"></i>
+        <i class="fa-brands fa-twitter-square text-white fa-2x my-2 my-md-5 ms-3" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" title="Visita nuestro perfil de Twitter"></i>
+        <i class="fa-brands fa-facebook-square text-white fa-2x my-2 my-md-5 ms-3" data-bs-toggle="tooltip"
+          data-bs-placement="right" title="Visita nuestro perfil de Facebook"></i>
       </div>
     </div>
   </div>
@@ -224,8 +241,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
