@@ -10,3 +10,20 @@ body{
     margin: 0;
 }
 
+@media (max-width: 1399px){
+    .tarjeta-2{
+        height: 10.7rem;
+    }
+}
+
+@media (max-width: 1199px){
+    .tarjeta-2{
+        height: 9rem;
+    }
+}
+
+@media (max-width: 991px){
+    .tarjeta-2{
+        height: 20.5rem;
+    }
+}
